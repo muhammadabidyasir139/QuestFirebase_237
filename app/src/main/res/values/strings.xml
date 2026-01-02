@@ -1,4 +1,13 @@
 <resources>
-    <string name="app_name">firebase_app</string>
-    <string name="back">Back</string>
+    <string name="app_name">Data Siswa</string>
+    <string name="entry_siswa">Entry Data Siswa</string>
+    <string name="nama">Nama</string>
+    <string name="alamat">Alamat</string>
+    <string name="telpon">No Telepon</string>
+    <string name="btn_submit">Simpan</string>
+    <string name="required_field">Diperlukan</string>
+    <string name="loading">Memuat Data...</string>
+    <string name="gagal">Gagal memuat data</string>
+    <string name="retry">Coba Lagi</string>
+    <string name="back">Kembali</string>
 </resources>
