@@ -6,6 +6,6 @@ interface AppContainer {
 
 class ContainerApp : AppContainer {
     override val repositorySiswa: RepositorySiswa by lazy {
-        object : RepositorySiswa {}
+        FirebaseRepositorySiswa()
     }
 }
