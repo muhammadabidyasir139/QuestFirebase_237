@@ -10,6 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.example.myfirebase.ui.theme.MyFirebaseTheme
+import com.example.myfirebase.view.controllNavigasi.DataSiswaApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +28,5 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun DataSiswaApp(modifier: Modifier = Modifier) {
-    // Placeholder for the main app navigation
-}
+// Placeholder for the main app navigation
+// Removed since it's now in PetaNavigasi.kt

@@ -4,5 +4,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 @Composable
-fun HalamanHome(modifier: Modifier = Modifier) {
+fun HomeScreen(
+    navigateToItemEntry: () -> Unit,
+    navigateToItemUpdate: (String) -> Unit,
+    modifier: Modifier = Modifier
+) {
 }

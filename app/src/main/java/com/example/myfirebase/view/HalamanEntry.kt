@@ -4,5 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 @Composable
-fun HalamanEntry(modifier: Modifier = Modifier) {
+fun EntrySiswaScreen(
+    navigateBack: () -> Unit,
+    modifier: Modifier = Modifier
+) {
 }
