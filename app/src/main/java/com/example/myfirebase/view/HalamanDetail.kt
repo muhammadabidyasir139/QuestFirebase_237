@@ -55,6 +55,7 @@ fun HalamanDetail(
     Scaffold(
         modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
+            // App Bar
             SiswaTopAppBar(
                 title = stringResource(DestinasiDetail.titleRes),
                 canNavigateBack = true,
@@ -63,6 +64,7 @@ fun HalamanDetail(
             )
         },
         floatingActionButton = {
+            // Tombol Edit
             FloatingActionButton(
                 onClick = { navigateToEditItem(viewModel.statusUIDetail.let {
                     if (it is StatusUIDetail.Success) it.satusiswa.id.toString() else ""
