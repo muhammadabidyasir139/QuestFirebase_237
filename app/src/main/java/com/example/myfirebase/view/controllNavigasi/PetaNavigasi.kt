@@ -32,7 +32,7 @@ fun HostNavigasi(
         startDestination = DestinasiHome.route,
         modifier = modifier
     ) {
-        // Halaman Utama
+        // Halaman Utama Aplikasi
         composable(DestinasiHome.route) {
             HomeScreen(
                 navigateToItemEntry = { navController.navigate(DestinasiEntry.route) },
