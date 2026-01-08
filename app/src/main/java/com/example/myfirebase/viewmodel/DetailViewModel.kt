@@ -41,7 +41,12 @@ class DetailViewModel(
         viewModelScope.launch {
             statusUIDetail = StatusUIDetail.Loading
             statusUIDetail = try {
-                StatusUIDetail.Success(satusiswa = repositorySiswa.getSatuSiswa(idSiswa))
+                val result = repositorySiswa.getSatuSiswa(idSiswa)
+                if (result != null) {
+                    StatusUIDetail.Success(satusiswa = result)
+                } else {
+                    StatusUIDetail.Error
+                }
             } catch (e: IOException) {
                 StatusUIDetail.Error
             } catch (e: Exception) {

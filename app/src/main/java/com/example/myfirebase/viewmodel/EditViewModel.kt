@@ -28,8 +28,8 @@ class EditViewModel(
 
     init {
         viewModelScope.launch {
-            uiStateSiswa = repositorySiswa.getSatuSiswa(idSiswa)
-                .toUiStateSiswa(true)
+            val result = repositorySiswa.getSatuSiswa(idSiswa)
+            uiStateSiswa = result?.toUiStateSiswa(true) ?: UIStateSiswa()
         }
     }
 
