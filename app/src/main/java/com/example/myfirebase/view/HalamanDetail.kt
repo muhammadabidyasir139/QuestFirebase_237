@@ -44,7 +44,7 @@ import com.example.myfirebase.viewmodel.StatusUIDetail
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HalamanDetail(
+fun DetailSiswaScreen(
     navigateBack: () -> Unit,
     navigateToEditItem: (String) -> Unit,
     modifier: Modifier = Modifier,

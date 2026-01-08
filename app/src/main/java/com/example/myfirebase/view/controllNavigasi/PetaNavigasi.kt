@@ -50,7 +50,7 @@ fun HostNavigasi(
                 type = NavType.StringType
             })
         ) {
-            HalamanDetail(
+            DetailSiswaScreen(
                 navigateBack = { navController.navigateUp() },
                 navigateToEditItem = {
                     navController.navigate("${DestinasiEdit.route}/$it")
