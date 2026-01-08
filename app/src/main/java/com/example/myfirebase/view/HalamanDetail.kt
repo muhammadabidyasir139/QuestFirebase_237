@@ -101,13 +101,13 @@ fun StatusDetailScreen(
     onDeleteClick: () -> Unit
 ) {
     when (statusUIDetail) {
-        is StatusUIDetail.Loading -> OnLoading(modifier = modifier)
+        is StatusUIDetail.Loading -> LoadingScreen(modifier = modifier)
         is StatusUIDetail.Success -> ItemDetailSiswa(
             siswa = statusUIDetail.satusiswa,
             modifier = modifier,
             onDeleteClick = onDeleteClick
         )
-        is StatusUIDetail.Error -> OnError(retryAction, modifier = modifier)
+        is StatusUIDetail.Error -> ErrorScreen(retryAction, modifier = modifier)
     }
 }
 
