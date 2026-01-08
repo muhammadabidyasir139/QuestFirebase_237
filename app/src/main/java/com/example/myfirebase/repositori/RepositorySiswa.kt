@@ -14,6 +14,7 @@ interface RepositorySiswa {
 
 class FirebaseRepositorySiswa : RepositorySiswa {
     private val db = FirebaseFirestore.getInstance()
+
     private val collection = db.collection("siswa")
 
     override suspend fun getDataSiswa(): List<Siswa> {
