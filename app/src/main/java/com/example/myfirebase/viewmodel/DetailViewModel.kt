@@ -36,6 +36,7 @@ class DetailViewModel(
         getSatuSiswa()
     }
 
+    // Fungsi untuk mengambil data siswa berdasarkan ID
     fun getSatuSiswa() {
         viewModelScope.launch {
             statusUIDetail = StatusUIDetail.Loading
