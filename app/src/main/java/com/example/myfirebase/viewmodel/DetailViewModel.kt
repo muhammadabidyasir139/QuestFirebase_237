@@ -45,6 +45,7 @@ class DetailViewModel(
             } catch (e: IOException) {
                 StatusUIDetail.Error
             } catch (e: Exception) {
+                println("Gagal Ambil Data: ${e.message}")
                 StatusUIDetail.Error
             }
         }
