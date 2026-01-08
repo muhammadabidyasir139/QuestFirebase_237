@@ -3,11 +3,9 @@ package com.example.myfirebase
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.runtime.Composable
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.myfirebase.ui.theme.MyFirebaseTheme
 import com.example.myfirebase.view.controllNavigasi.DataSiswaApp
@@ -15,18 +13,16 @@ import com.example.myfirebase.view.controllNavigasi.DataSiswaApp
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
             MyFirebaseTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    DataSiswaApp(
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                // A surface container using the 'background' color from the theme
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    DataSiswaApp()
                 }
             }
         }
     }
 }
-
-// Placeholder for the main app navigation
-// Removed since it's now in PetaNavigasi.kt

@@ -5,7 +5,7 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import com.example.myfirebase.SiswaApp
+import com.example.myfirebase.repositori.AplikasiDataSiswa
 
 object PenyediaViewModel {
     val Factory = viewModelFactory {
@@ -30,5 +30,5 @@ object PenyediaViewModel {
     }
 }
 
-fun CreationExtras.aplikasiSiswa(): SiswaApp =
-    (this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as SiswaApp)
+fun CreationExtras.aplikasiSiswa(): AplikasiDataSiswa =
+    (this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as AplikasiDataSiswa)
