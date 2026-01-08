@@ -3,7 +3,14 @@ package com.example.myfirebase.view.route
 import com.example.myfirebase.R
 
 interface DestinasiNavigasi {
+    /**
+     * Nama unik untuk menentukan jalur composable
+     */
     val route: String
+
+    /**
+     * String resource id untuk judul halaman
+     */
     val titleRes: Int
 }
 
