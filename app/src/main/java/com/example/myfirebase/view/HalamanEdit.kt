@@ -26,7 +26,7 @@ fun EditSiswaScreen(
     modifier: Modifier = Modifier,
     viewModel: EditViewModel = viewModel(factory = PenyediaViewModel.Factory)
 ) {
-    // Inisialisasi Coroutine Scope
+    // Inisialisasi Coroutine Scope untuk operasi async
     val coroutineScope = rememberCoroutineScope()
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     Scaffold(
