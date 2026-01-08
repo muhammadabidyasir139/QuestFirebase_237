@@ -24,7 +24,7 @@ class EditViewModel(
         private set
 
     private val idSiswa: Long =
-        checkNotNull(savedStateHandle[DestinasiDetail.itemIdArg]) // As per image 1
+        checkNotNull(savedStateHandle[DestinasiDetail.itemIdArg]).toString().toLong()
 
     init {
         viewModelScope.launch {

@@ -27,7 +27,7 @@ class DetailViewModel(
 ) : ViewModel() {
 
     private val idSiswa: Long =
-        checkNotNull(savedStateHandle[DestinasiDetail.itemIdArg])
+        checkNotNull(savedStateHandle[DestinasiDetail.itemIdArg]).toString().toLong()
     
     var statusUIDetail: StatusUIDetail by mutableStateOf(StatusUIDetail.Loading)
         private set
